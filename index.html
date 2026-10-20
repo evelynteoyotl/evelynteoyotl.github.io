@@ -1,29 +1,162 @@
-Evelyn Teoyotl 
-Finance Student
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evelyn Teoyotl | Portfolio</title>
+  <style>
+    :root {
+      --navy: #14274e;
+      --blue: #394867;
+      --accent: #2a9d8f;
+      --light: #f3f6fa;
+      --text: #1d2433;
+      --border: #d5dce6;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.65;
+      background: #fff;
+    }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; }
 
-University of Utah 
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--navy);
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 6px 24px; padding: 14px 20px;
+    }
+    nav a {
+      color: #fff; text-decoration: none; font-weight: 600;
+      padding: 2px 0; border-bottom: 2px solid transparent;
+    }
+    nav a:hover, nav a:focus { border-bottom-color: var(--accent); outline: none; }
 
-About Me
-I am a Finance student at the University of Utah, who enjoys using technology to solve real business problems. I am interested in careers in Economic Forecasting, data analytics or financial analysis, where I can turn data into clear recommendations that help organizations make better decisions. I am especially curious about artificial intelligence and how tools like ChatGPT, Claude, and GitHub Copilot can speed up research, automate routine tasks, and improve the quality of analysis. On the technical side, I am building skills in HTML, CSS, Python, SQL, and Excel, and I am learning how to use Git and GitHub to organize and share my work. This portfolio will grow throughout the semester as I add course assignments and my KPMG group project.
+    header {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: #fff; text-align: center; padding: 70px 20px;
+    }
+    header h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.2rem); }
+    header p { margin: 6px 0 0; font-size: 1.15rem; }
+    header .school { color: #bfe9e3; }
 
-Skills
+    main { max-width: 860px; margin: 0 auto; padding: 10px 20px 50px; }
+    section { padding: 34px 0 10px; }
+    h2 {
+      color: var(--navy); font-size: 1.8rem; margin: 0 0 14px;
+      padding-bottom: 6px; border-bottom: 3px solid var(--accent);
+      display: inline-block;
+    }
 
-SQL
-Git
-GitHub
-Microsoft Excel
-Data Analytics
-AI Prompt Engineering
-Projects
-Project	Description
-AI Business Analysis	Analyze business data using ChatGPT (coming soon)
-Data Visualization	Dashboard built with Tableau (coming soon)
-Web Development	Responsive Bootstrap website (coming soon)
-Process Improvement	AI-assisted business workflow redesign (coming soon)
-KPMG Group Project	Team project, details coming soon
-Resume
-Resume coming soon.
+    .skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills li {
+      background: var(--light); border: 1px solid var(--border);
+      border-radius: 20px; padding: 5px 16px; font-weight: 600; color: var(--navy);
+    }
 
-Contact
-Email: u1365018@utah.edu
-GitHub: github.com/evelynteoyotl
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); }
+    th { background: var(--navy); color: #fff; }
+    tr:nth-child(even) td { background: var(--light); }
+
+    a { color: var(--accent); font-weight: 600; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    footer { text-align: center; padding: 22px; background: var(--light); color: var(--blue); font-size: .9rem; }
+
+    @media (max-width: 480px) {
+      header { padding: 50px 16px; }
+      th, td { padding: 10px 8px; font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Evelyn Teoyotl</h1>
+    <p>Finance Student</p>
+    <p class="school">University of Utah</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Finance student at the University of Utah who enjoys using technology to
+        solve real business problems. I am interested in careers in economic forecasting,
+        data analytics, and financial analysis, where I can turn data into clear
+        recommendations that help organizations make better decisions. I am especially
+        curious about artificial intelligence and how tools like ChatGPT, Claude, and GitHub
+        Copilot can speed up research, automate routine tasks, and improve the quality of
+        analysis. On the technical side, I am building skills in HTML, CSS, Python, SQL, and
+        Excel, and I am learning how to use Git and GitHub to organize and share my work.
+        This portfolio will grow throughout the semester as I add course assignments and my
+        KPMG group project.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Microsoft Excel</li>
+        <li>Data Analytics</li>
+        <li>AI Prompt Engineering</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Project</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>AI Business Analysis</td><td>Analyze business data using ChatGPT (coming soon)</td></tr>
+            <tr><td>Data Visualization</td><td>Dashboard built with Tableau (coming soon)</td></tr>
+            <tr><td>Web Development</td><td>Responsive Bootstrap website (coming soon)</td></tr>
+            <tr><td>Process Improvement</td><td>AI-assisted business workflow redesign (coming soon)</td></tr>
+            <tr><td>KPMG Group Project</td><td>Team project, details coming soon</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Resume coming soon.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:u1365018@utah.edu">u1365018@utah.edu</a><br>
+        GitHub: <a href="https://github.com/evelynteoyotl">github.com/evelynteoyotl</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Evelyn Teoyotl</footer>
+
+</body>
+</html>
